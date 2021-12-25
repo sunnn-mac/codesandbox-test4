@@ -188,6 +188,23 @@ const nameArr = ["田中", "山田", "かが"];
 // });
 // console.log(newNameArr);
 
+// テスト用などにたくさん配列を作る方法
+// [...Array(n).keys()]は、JavaScriptで0からn-1までの整数が順番に並んだ配列を得る記法
+// val には、上記で作った配列各要素の値が入る
+const users = [...Array(18).keys()].map(((val) => {
+  return {
+    id: val,
+    name: "じゃけえ$(val)",
+    image: "https://source.unsplash.com/NE0XGVKTmcA",
+    email: "12345@example.com",
+    phone: "000-111-1111",
+    company: {
+      name: "テスト株式会社"
+    },
+    website: "https://google.com"
+  }
+}))
+
 /**
  * 三項演算子
  */
