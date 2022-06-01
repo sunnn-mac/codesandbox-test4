@@ -122,8 +122,8 @@
  */
 // 配列の展開
 // const arr1 = [1, 2];
-// console.log(arr1);
-// console.log(...arr1);
+// console.log(arr1);   // [1, 2]
+// console.log(...arr1);  //1 2
 
 // const sumFunc = (num1, num2) => console.log(num1 + num2);
 // sumFunc(arr1[0], arr1[1]);
@@ -132,27 +132,27 @@
 // まとめる
 // const arr2 = [1, 2, 3, 4, 5];
 // const [num1, num2, ...arr3] = arr2;
-// console.log(num1);
-// console.log(num2);
-// console.log(arr3);
+// console.log(num1);   // 1
+// console.log(num2);   // 2
+// console.log(arr3);   // [3, 4, 5]
 
 // //配列のコピー、結合
 // const arr4 = [10, 20];
 // const arr5 = [30, 40];
 // const arr6 = [...arr4];
 // arr6[0] = 100;
-// console.log(arr6);
-// console.log(arr4);
+// console.log(arr6);   // [100, 20]
+// console.log(arr4);   // [10, 20]
 
 // const arr7 = [...arr4, ...arr5];
-// console.log(arr7);
+// console.log(arr7);   // [10, 20, 30, 40]
 
 // // =でコピーすると？　同じオブジェクトを参照してしまう。参照渡し
 // const arr8 = arr4;
 // console.log(arr8);
 // arr8[0] = 100;
-// console.log(arr8);
-// console.log(arr4);
+// console.log(arr8);   // [100, 20]
+// console.log(arr4);   // [100, 20]
 
 /**
  * mapやfilterを使った配列の処理
