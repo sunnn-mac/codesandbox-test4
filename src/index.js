@@ -223,12 +223,12 @@ const users = [...Array(18).keys()].map(((val) => {
 // const num1 = "1300";
 // const formattedNum =
 //   typeof num1 === "number" ? num1.toLocaleString() : "数値を入力してください";
-// console.log(formattedNum); //金額表示
+// console.log(formattedNum); //数値を入力してください
 
 // const checkSum = (num1, num2) => {
 //   return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
 // };
-// console.log(checkSum(50, 40));
+// console.log(checkSum(50, 40)); // 許容範囲内です 
 
 /**
  * 論理演算子の本当の意味を知ろう && ||
