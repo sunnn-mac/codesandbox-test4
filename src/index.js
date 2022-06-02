@@ -168,17 +168,20 @@ const nameArr = ["田中", "山田", "かが"];
 // const nameArr2 = nameArr.map((name)=>{
 //   return name;
 // })
-// console.log(nameArr2);
+// console.log(nameArr2);   // ["田中", "山田", "かが"] 
 
-// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
+// nameArr.map((name) => console.log(name));   
+
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));   // 1番目は田中です
 
 // filter
 // const numArr = [1, 2, 3, 4, 5];
 // const newNumArr = numArr.filter((num) => {
 //   return num % 2 === 1; //trueになったときだけの配列にフィルタされる
 // });
-// console.log(newNumArr);
+// console.log(newNumArr);  // [1, 3, 5]
 
+// 自分の名前以外は、「さん」をつける
 // const newNameArr = nameArr.map((name) => {
 //   if (name === "かが") {
 //     return name;
@@ -210,11 +213,13 @@ const users = [...Array(18).keys()].map(((val) => {
  */
 // ある条件　? 条件がtureの時　：条件がfalseの時
 // const val1 = 1 > 0 ? 'true' : 'false';
-// console.log(val1);
+// console.log(val1);   // true
 
 // const num = 1300;
 // console.log(num.toLocaleString()); //金額表示
 
+// 数値以外の時は、「数値を入力してください」と表示したい
+// toLocaleStringは、数値の時は "1,300"が返る。文字列の場合は変換できない
 // const num1 = "1300";
 // const formattedNum =
 //   typeof num1 === "number" ? num1.toLocaleString() : "数値を入力してください";
